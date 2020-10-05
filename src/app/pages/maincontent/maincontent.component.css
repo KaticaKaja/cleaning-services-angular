@@ -1,0 +1,15 @@
+a{
+    text-decoration: none;
+    color: #0A9ECE;
+}
+a:hover{
+    color: #83A40D;
+}
+.imgHolder{
+    position: relative;
+}
+.imgText{
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}

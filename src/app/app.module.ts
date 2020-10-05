@@ -1,3 +1,4 @@
+import { LayoutRoutingModule } from './layouts/layout-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -6,11 +7,17 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    // PageNotFoundComponent,
+    // MainpageComponent,
+    // AboutComponent,
+    // ContactComponent,
+    // PricelistComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LayoutRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

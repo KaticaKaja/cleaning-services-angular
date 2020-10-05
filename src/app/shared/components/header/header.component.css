@@ -1,0 +1,16 @@
+.menu li a{
+    color:#096A9F;
+    font-weight: 500;
+}
+.menu li a:hover{
+    color: #0A9ECE;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.navbar-toggler:hover{
+   background-color: #0A9ECE;
+}

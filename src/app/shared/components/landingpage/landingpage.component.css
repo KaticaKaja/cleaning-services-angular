@@ -1,0 +1,23 @@
+.landing {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url("../../../../assets/images/landing.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .wrapperlogo{
+    position: relative;
+  }
+  .landinglogo{
+    position: absolute;
+    left:30%;
+    bottom: 0;
+    z-index: 1;
+  }
+  h1{
+    font-size: smaller;
+  }
+.landingheading h1, h2, p{
+  color: #25386b;
+}

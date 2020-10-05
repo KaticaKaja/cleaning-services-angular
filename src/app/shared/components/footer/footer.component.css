@@ -1,0 +1,41 @@
+ul li{
+    list-style-type: none;
+}
+p{
+    text-decoration: none;
+    color: #0A9ECE;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #0A9ECE;
+}
+.custom{
+    background-color: #0A9ECE;
+    border: none;
+    color: white;
+}
+.custom:hover{
+    background-color: #096A9F;
+}
+.btn:active,.btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+.social a{
+    cursor: pointer;
+}
+a:hover{
+    color: #096A9F;
+}
+.line{
+    margin: 0 15%;
+}
+.menu-link{
+    margin: 0;
+    padding: 0;
+}
+.sub{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,55 @@
+{
+    "employees":[],
+    "type_services":[
+        {
+            "id" : 1,
+            "name" : "Carpets/Floors"
+        },
+        {
+            "id" : 2,
+            "name" : "Vehicles"
+        },
+        {
+            "id" : 3,
+            "name" : "Restaurants"
+        },
+        {
+            "id" : 4,
+            "name" : "Furniture"
+        },
+        {
+            "id" : 5,
+            "name" : "Offices"
+        }
+    ],
+    "gallery_services":[
+        {
+            
+        }
+    ],
+    "pricing":[],
+    "clients":[],
+    "messages":[],
+    "navigation":[
+        {
+            "id" : 1,
+            "name" : "Home",
+            "link" : "/home"
+        },
+        {
+            "id" : 2,
+            "name" : "Pricing",
+            "link" : "/pages/pricelist"
+        },
+        {
+            "id" : 3,
+            "name" : "About Us",
+            "link" : "/pages/about"
+        },
+        {
+            "id" : 4,
+            "name" : "Contact",
+            "link" : "/pages/contact"
+        }
+    ]
+}
