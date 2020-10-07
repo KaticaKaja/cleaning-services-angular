@@ -13,7 +13,7 @@
                   </div>
             </div>
             <div class="col-md-8 formstyle rounded">
-                <form #contactForm = "ngForm" (submit)="contact(contactForm)">
+                <form #contactForm = "ngForm" (ngSubmit)="contact(contactForm)">
                     <div class="form-group">
                         <label for="firstname">First Name</label>
                         <input type="text" class="form-control" id="firstname" placeholder="Your first name" pattern="[A-Z][a-z]{2,}" name="firstName" ngModel required #firstName="ngModel">
@@ -31,7 +31,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" ngModel required></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" #message="ngModel" ngModel required></textarea>
                     </div>
                     <div class="mb-2 text-center">
                         <button type="submit" [disabled]="!contactForm.valid" class="btn btn-light  btnStyle">Submit</button>

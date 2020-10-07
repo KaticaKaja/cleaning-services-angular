@@ -1,1 +1,279 @@
-{"employees":[{"img":"assets/images/team1-1.png","job_title":"Employee of the year","id":5,"first_name":"Makenna","last_name":"Runte"},{"img":"assets/images/team2-1.png","job_title":"CEO","id":5,"first_name":"Ara","last_name":"Kessler"},{"img":"assets/images/team3-1.png","job_title":"Carpets expert","id":5,"first_name":"Emily","last_name":"Ryan"},{"img":"assets/images/team6.png","job_title":"Expert at car details cleaning","id":5,"first_name":"Lonny","last_name":"Kiehn"},{"img":"assets/images/team7.png","job_title":"House decorator","id":5,"first_name":"Nellie","last_name":"Parker"}],"type_services":[{"id":1,"name":"Carpets/Floors"},{"id":2,"name":"Vehicles"},{"id":3,"name":"Restaurants"},{"id":4,"name":"Furniture"},{"id":5,"name":"Offices"},{"id":6,"name":"Houses"}],"gallery_services":[{"img_src":"assets/images/carpets1.jpg","desc":"Steam cleaning rugs","service_type_id":1},{"img_src":"assets/images/carpets2.jpg","desc":"Deap cleaning of carpets","service_type_id":1},{"img_src":"assets/images/carpets3.jpg","desc":"Best equipment available","service_type_id":1},{"img_src":"assets/images/floor.jpg","desc":"Regular house cleaning","service_type_id":1},{"img_src":"assets/images/carwash1.jpg","desc":"Basic inside-car cleaning","service_type_id":2},{"img_src":"assets/images/carwash2.jpg","desc":"Detailed car cleaning inside","service_type_id":2},{"img_src":"assets/images/carwash3.jpg","desc":"Grooming your tires","service_type_id":2},{"img_src":"assets/images/carwash4.jpg","desc":"Interior oiling","service_type_id":2},{"img_src":"assets/images/carwash12.jpg","desc":"Car wash","service_type_id":2},{"img_src":"assets/images/furniture1.jpg","desc":"Deep furniture cleaning","service_type_id":4},{"img_src":"assets/images/furniture2.jpg","desc":"Furniture cleaning","service_type_id":4},{"img_src":"assets/images/furniture3.png","desc":"Wet furniture cleaning","service_type_id":4},{"img_src":"assets/images/house5.jpg","desc":"Houses cleaning","service_type_id":6},{"img_src":"assets/images/office1.jpg","desc":"Office cleaning","service_type_id":5},{"img_src":"assets/images/office2.jpg","desc":"Covid stop office cleaning","service_type_id":5},{"img_src":"assets/images/office3.jpg","desc":"Equipment office cleaning","service_type_id":5},{"img_src":"assets/images/office4.jpg","desc":"Rearenging office furniture","service_type_id":5},{"img_src":"assets/images/office5.jpg","desc":"Windows office cleaning","service_type_id":5},{"img_src":"assets/images/restaurant.jpg","desc":"Covid stop restaurant cleaning","service_type_id":3},{"img_src":"assets/images/restaurant1.jpg","desc":"Kitchen resturant cleaning","service_type_id":3},{"img_src":"assets/images/restaurants3.jpg","desc":"Detailed kitchen restaurant","service_type_id":3}],"pricing":[{"id":1,"name":"car detailing","price":"188.00","available":"no"},{"id":2,"name":"leather furniture","price":"249.00","available":"no"},{"id":3,"name":"restaurant/1m^2","price":"861.00","available":"no"},{"id":4,"name":"textiles furniture","price":"168.00","available":"no"},{"id":5,"name":"carpet deap cleaning","price":"800.00","available":"yes"},{"id":6,"name":"leather furniture","price":"767.00","available":"yes"},{"id":7,"name":"house/1m^2","price":"222.00","available":"no"},{"id":8,"name":"office/1m^2","price":"428.00","available":"yes"}],"clients":[{"img":"assets/images/clients/gsp.png","imgAlt":"gsp logo","name":"gsp company","comment":"The best cleaning service in town"},{"img":"assets/images/clients/kristalhotel.png","imgAlt":"crystal hotel logo","name":"crystal hotel","comment":"Fast, detailed cleaning, always on time"},{"img":"assets/images/clients/tehniks.jpg","imgAlt":"tehniks logo","name":"tehniks company","comment":"Our offices are always spot on thanks to this team"},{"img":"assets/images/clients/brb.png","imgAlt":"brb logo","name":"brb company","comment":"Loverly service – easy booking, reasonable price, and hard-working team."}],"messages":[],"navigation":[{"id":1,"name":"Home","link":"/home"},{"id":2,"name":"Pricing","link":"/pages/pricelist"},{"id":3,"name":"About Us","link":"/pages/about"},{"id":4,"name":"Contact","link":"/pages/contact"}]}
+{
+  "employees": [
+    {
+      "img": "assets/images/team1-1.png",
+      "job_title": "Employee of the year",
+      "id": 5,
+      "first_name": "Makenna",
+      "last_name": "Runte"
+    },
+    {
+      "img": "assets/images/team2-1.png",
+      "job_title": "CEO",
+      "id": 5,
+      "first_name": "Ara",
+      "last_name": "Kessler"
+    },
+    {
+      "img": "assets/images/team3-1.png",
+      "job_title": "Carpets expert",
+      "id": 5,
+      "first_name": "Emily",
+      "last_name": "Ryan"
+    },
+    {
+      "img": "assets/images/team6.png",
+      "job_title": "Expert at car details cleaning",
+      "id": 5,
+      "first_name": "Lonny",
+      "last_name": "Kiehn"
+    },
+    {
+      "img": "assets/images/team7.png",
+      "job_title": "House decorator",
+      "id": 5,
+      "first_name": "Nellie",
+      "last_name": "Parker"
+    }
+  ],
+  "type_services": [
+    {
+      "id": 1,
+      "name": "Carpets/Floors"
+    },
+    {
+      "id": 2,
+      "name": "Vehicles"
+    },
+    {
+      "id": 3,
+      "name": "Restaurants"
+    },
+    {
+      "id": 4,
+      "name": "Furniture"
+    },
+    {
+      "id": 5,
+      "name": "Offices"
+    },
+    {
+      "id": 6,
+      "name": "Houses"
+    }
+  ],
+  "gallery_services": [
+    {
+      "img_src": "assets/images/carpets1.jpg",
+      "desc": "Steam cleaning rugs",
+      "service_type_id": 1
+    },
+    {
+      "img_src": "assets/images/carpets2.jpg",
+      "desc": "Deap cleaning of carpets",
+      "service_type_id": 1
+    },
+    {
+      "img_src": "assets/images/carpets3.jpg",
+      "desc": "Best equipment available",
+      "service_type_id": 1
+    },
+    {
+      "img_src": "assets/images/floor.jpg",
+      "desc": "Regular house cleaning",
+      "service_type_id": 1
+    },
+    {
+      "img_src": "assets/images/carwash1.jpg",
+      "desc": "Basic inside-car cleaning",
+      "service_type_id": 2
+    },
+    {
+      "img_src": "assets/images/carwash2.jpg",
+      "desc": "Detailed car cleaning inside",
+      "service_type_id": 2
+    },
+    {
+      "img_src": "assets/images/carwash3.jpg",
+      "desc": "Grooming your tires",
+      "service_type_id": 2
+    },
+    {
+      "img_src": "assets/images/carwash4.jpg",
+      "desc": "Interior oiling",
+      "service_type_id": 2
+    },
+    {
+      "img_src": "assets/images/carwash12.jpg",
+      "desc": "Car wash",
+      "service_type_id": 2
+    },
+    {
+      "img_src": "assets/images/furniture1.jpg",
+      "desc": "Deep furniture cleaning",
+      "service_type_id": 4
+    },
+    {
+      "img_src": "assets/images/furniture2.jpg",
+      "desc": "Furniture cleaning",
+      "service_type_id": 4
+    },
+    {
+      "img_src": "assets/images/furniture3.png",
+      "desc": "Wet furniture cleaning",
+      "service_type_id": 4
+    },
+    {
+      "img_src": "assets/images/house5.jpg",
+      "desc": "Houses cleaning",
+      "service_type_id": 6
+    },
+    {
+      "img_src": "assets/images/office1.jpg",
+      "desc": "Office cleaning",
+      "service_type_id": 5
+    },
+    {
+      "img_src": "assets/images/office2.jpg",
+      "desc": "Covid stop office cleaning",
+      "service_type_id": 5
+    },
+    {
+      "img_src": "assets/images/office3.jpg",
+      "desc": "Equipment office cleaning",
+      "service_type_id": 5
+    },
+    {
+      "img_src": "assets/images/office4.jpg",
+      "desc": "Rearenging office furniture",
+      "service_type_id": 5
+    },
+    {
+      "img_src": "assets/images/office5.jpg",
+      "desc": "Windows office cleaning",
+      "service_type_id": 5
+    },
+    {
+      "img_src": "assets/images/restaurant.jpg",
+      "desc": "Covid stop restaurant cleaning",
+      "service_type_id": 3
+    },
+    {
+      "img_src": "assets/images/restaurant1.jpg",
+      "desc": "Kitchen resturant cleaning",
+      "service_type_id": 3
+    },
+    {
+      "img_src": "assets/images/restaurants3.jpg",
+      "desc": "Detailed kitchen restaurant",
+      "service_type_id": 3
+    }
+  ],
+  "pricing": [
+    {
+      "id": 1,
+      "name": "car detailing",
+      "price": "188.00",
+      "available": "no"
+    },
+    {
+      "id": 2,
+      "name": "leather furniture",
+      "price": "249.00",
+      "available": "no"
+    },
+    {
+      "id": 3,
+      "name": "restaurant/1m^2",
+      "price": "861.00",
+      "available": "no"
+    },
+    {
+      "id": 4,
+      "name": "textiles furniture",
+      "price": "168.00",
+      "available": "no"
+    },
+    {
+      "id": 5,
+      "name": "carpet deap cleaning",
+      "price": "800.00",
+      "available": "yes"
+    },
+    {
+      "id": 6,
+      "name": "leather furniture",
+      "price": "767.00",
+      "available": "yes"
+    },
+    {
+      "id": 7,
+      "name": "house/1m^2",
+      "price": "222.00",
+      "available": "no"
+    },
+    {
+      "id": 8,
+      "name": "office/1m^2",
+      "price": "428.00",
+      "available": "yes"
+    }
+  ],
+  "clients": [
+    {
+      "img": "assets/images/clients/gsp.png",
+      "imgAlt": "gsp logo",
+      "name": "gsp company",
+      "comment": "The best cleaning service in town"
+    },
+    {
+      "img": "assets/images/clients/kristalhotel.png",
+      "imgAlt": "crystal hotel logo",
+      "name": "crystal hotel",
+      "comment": "Fast, detailed cleaning, always on time"
+    },
+    {
+      "img": "assets/images/clients/tehniks.jpg",
+      "imgAlt": "tehniks logo",
+      "name": "tehniks company",
+      "comment": "Our offices are always spot on thanks to this team"
+    },
+    {
+      "img": "assets/images/clients/brb.png",
+      "imgAlt": "brb logo",
+      "name": "brb company",
+      "comment": "Loverly service – easy booking, reasonable price, and hard-working team."
+    }
+  ],
+  "messages": [
+    {
+      "first_name": "Katica",
+      "last_name": "Begovic",
+      "email": "paja@gmail.com",
+      "message": "gfdgdfg",
+      "id": 1
+    }
+  ],
+  "navigation": [
+    {
+      "id": 1,
+      "name": "Home",
+      "link": "/home"
+    },
+    {
+      "id": 2,
+      "name": "Pricing",
+      "link": "/pages/pricelist"
+    },
+    {
+      "id": 3,
+      "name": "About Us",
+      "link": "/pages/about"
+    },
+    {
+      "id": 4,
+      "name": "Contact",
+      "link": "/pages/contact"
+    }
+  ]
+}

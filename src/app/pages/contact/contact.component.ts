@@ -1,3 +1,4 @@
+import { MessagesService } from './../../shared/services/http/contact/messages.service';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
@@ -9,13 +10,22 @@ import { NgForm } from '@angular/forms';
 export class ContactComponent implements OnInit {
 
   messageAfterSubmit:string;
-  constructor() { }
+  constructor(private http:MessagesService) { }
 
   ngOnInit(): void {
   }
   contact(contactForm:NgForm){
-    console.log(contactForm.value);
       this.messageAfterSubmit="Your message was sent, we will contact you soon";
+      
+      let newContact = {
+        first_name: contactForm.value.firstName,
+        last_name: contactForm.value.lastName,
+        email: contactForm.value.email,
+        message: contactForm.value.message,        
+      }
+      this.http.createMessage(newContact).subscribe(data=>{
+        // console.log(data);
+      });
       contactForm.reset();
   }
 
