@@ -17,15 +17,20 @@ export class FooterComponent implements OnInit {
   }
 
   sub(subForm:NgForm){
-    this.messageAfterSubmit="Your message was sent, we will contact you soon";
-    
     let newSub = {
       email: subForm.value.email       
     }
-    if(newSub.email !== "")
+    if(newSub.email == null){
+      // console.log('polje je null')
+    }else if(newSub.email === ''){
+      // console.log('polje je prazno');
+    }else{
+    this.messageAfterSubmit="Thank you for subscribing";
     this.msgServ.subscribeList(newSub).subscribe(data=>{
       // console.log(data);
     });
+    }
+    
     subForm.reset();
   }
 }

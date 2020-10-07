@@ -38,6 +38,7 @@ a:hover{
 .sub{
     display: flex;
     justify-content: center;
+    color: #0A9ECE;
 }
 textarea.ng-touched.ng-invalid,input.ng-touched.ng-invalid{
     border: 2px solid red;

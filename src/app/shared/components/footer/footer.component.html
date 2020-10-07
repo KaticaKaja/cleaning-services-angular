@@ -44,6 +44,7 @@
               <input placeholder="example@email.com" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" ngModel #email="ngModel" email>
             </div>
             <button type="submit" [disabled]="!subForm.valid" class="btn custom">Subscribe</button>
+            <span>{{messageAfterSubmit}}</span>
           </form>
         </div>
       </div>
