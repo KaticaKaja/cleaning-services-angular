@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 #### Json-server pokretanje
 `npm run server`
 #### Dodavanje/modifikovanje baze
-`npm run generate`
+`npm run generate` ili `direktno u database.json`
 #### Menjanje baze
 `db.json` ili `generate.json` uz pomoć faker.js-a
 >**obavezno komandu `npm run generate` posle izmena**
