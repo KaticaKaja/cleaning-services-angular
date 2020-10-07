@@ -1,0 +1,6 @@
+.pricelist tr,th,td,thead{
+    color: #25386b;
+}
+td,th{
+    text-align: center;
+}

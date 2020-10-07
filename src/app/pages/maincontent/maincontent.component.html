@@ -1,50 +1,7 @@
 <div class="row">
-    <div class="col-lg-6 mb-4">
-      <div class="card">
-        <img src="../../../assets/images/cleaning_carpets.jpg" class="card-img" alt="...">
-        <div class="card-img-overlay imgHolder">
-          <p class="card-title imgText font-italic">-Deep carpets cleaning</p>
-        </div>
-      </div>
+  <ng-container *ngIf="gallery">
+    <div class="col-lg-6 mb-4" *ngFor="let item of gallery | filter:filterId">
+      <app-card-gallery [filteredContent]="item"></app-card-gallery>
     </div>
-    <div class="col-lg-6 mb-4">
-      <div class="card">
-        <img src="../../../assets/images/cleaning_floors.jpg" class="card-img" alt="...">
-        <div class="card-img-overlay imgHolder">
-          <p class="card-title imgText font-italic">-All kinds of floors</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 mb-4">
-      <div class="card">
-        <img src="../../../assets/images/cleaning_carpets.jpg" class=" imgHolder card-img" alt="...">
-        <div class="card-img-overlay">
-          <h5 class="card-title imgText font-italic">-Deep carpets cleaning</h5>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 mb-4">
-      <div class="card">
-        <img src="../../../assets/images/cleaning_carpets.jpg" class=" imgHolder card-img" alt="...">
-        <div class="card-img-overlay">
-          <h5 class="card-title imgText font-italic">-Deep carpets cleaning</h5>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 mb-4">
-      <div class="card">
-        <img src="../../../assets/images/cleaning_carpets.jpg" class=" imgHolder card-img" alt="...">
-        <div class="card-img-overlay">
-          <h5 class="card-title imgText font-italic">-Deep carpets cleaning</h5>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 mb-4">
-      <div class="card">
-        <img src="../../../assets/images/cleaning_carpets.jpg" class=" imgHolder card-img" alt="...">
-        <div class="card-img-overlay">
-          <h5 class="card-title imgText font-italic">-Deep carpets cleaning</h5>
-        </div>
-      </div>
-    </div>
-  </div>
+  </ng-container>
+</div>

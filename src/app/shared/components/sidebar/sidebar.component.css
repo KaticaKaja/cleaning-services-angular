@@ -1,32 +1,37 @@
-.sidebar-wrapper{
-    
-}
 .sidebar-heading{
-    color: #F0EEF5;
-    background-color:#0A9ECE;
+  color: #F0EEF5;
+  background-color:#0A9ECE;
 }
 
 .blockquote-custom {
-    position: relative;
-    font-size: 1rem;
-    margin: 0px;
-  }
-  
-  .blockquote-custom-icon {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: -15px;
-    left: 10px;
-    background-color: #0A9ECE;
-  }
-  .img{
-    width: 70%;
-  }
-  .client{
-    padding-top: 10%;
-  }
+  position: relative;
+  font-size: 1rem;
+  margin: 0px;
+}
+
+.blockquote-custom-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background-color: #0A9ECE;
+}
+.img{
+  width: 70%;
+}
+.client{
+  padding-top: 10%;
+}
+
+.active-filter{
+  background-color: #54c5eb;
+  color: white;
+}
+.klik{
+  cursor: pointer;
+}

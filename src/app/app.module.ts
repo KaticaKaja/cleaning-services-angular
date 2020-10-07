@@ -5,19 +5,21 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import {HttpClientModule} from '@angular/common/http';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
-    AppComponent,
-    // PageNotFoundComponent,
-    // MainpageComponent,
-    // AboutComponent,
-    // ContactComponent,
-    // PricelistComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LayoutRoutingModule
+    LayoutRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

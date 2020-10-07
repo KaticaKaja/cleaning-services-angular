@@ -1,3 +1,4 @@
+// import { CardGalleryComponent } from './../shared/components/card-gallery/card-gallery.component';
 import { MaincontentComponent } from './../pages/maincontent/maincontent.component';
 import { PageNotFoundComponent } from './../pages/page-not-found/page-not-found.component';
 import { NgModule } from '@angular/core';

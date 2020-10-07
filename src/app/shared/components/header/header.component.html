@@ -1,27 +1,17 @@
 <nav class="navbar navbar-light navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" routerLink="#">
-        <img src="../assets/images/cleaning_service2.png" alt="" width="130">
+      <a class="navbar-brand" [routerLink]="['/home']">
+        <img src="assets/images/cleaning_service2.png" alt="" width="130">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
       <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav ml-auto mt-3 mt-lg-0 text-center menu">
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/home">Home</a>
+            <li class="nav-item" *ngFor="let nav of navigation">
+                <a class="nav-link" routerLink="{{nav.link}}">{{nav.name}}</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/pages/pricelist">Pricing</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/pages/about">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/pages/contact">Contact</a>
-            </li>
-            </ul>
+        </ul>
       </div>
     </div>
   </nav>

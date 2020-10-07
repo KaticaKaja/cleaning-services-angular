@@ -1,40 +1,24 @@
 <div class="row">
 <div class="col-12 my-5 my-lg-0">
     <div class="p-2 text-center sidebar-heading rounded">Our Services </div>
-    <div class="list-group">
-      <a href="#" class="list-group-item list-group-item-action">Carpets/Floors</a>
-      <a href="#" class="list-group-item list-group-item-action">Vehicles</a>
-      <a href="#" class="list-group-item list-group-item-action">Restaurants</a>
-      <a href="#" class="list-group-item list-group-item-action">Big Conferences</a>
-      <a href="#" class="list-group-item list-group-item-action">Furniture</a>
+    <div class="list-group" *ngFor="let item of types">
+      <a [ngClass]="{'active-filter': activatedFilter == item.name}" (click)="filterByType(item.id,$event)" class="list-group-item list-group-item-action klik">{{item.name}}</a>
     </div>
 </div>
 
 <div class="col-12 mt-lg-5 order-first order-lg-1">
   <div class="p-2 text-center sidebar-heading rounded">Satisfied Customers</div>
-  <div class="client">
+  <div class="client" *ngFor="let item of clients">
     <div class="rounded text-center">
-      <img class="img p-2" src="../assets/images/clients/gsp.png" alt="" >
+      <img class="img p-2" src="{{item.img}}" alt="{{item.imgAlt}}" >
     </div>
-    <blockquote class="blockquote shadow blockquote-custom bg-white p-1 rounded mt-3">
+    <blockquote class="blockquote shadow blockquote-custom bg-white p-2 rounded mt-3">
       <div class="blockquote-custom-icon"><i class="fa fa-quote-left text-white"></i></div>
-      <p class="mb-0 font-italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. <a href="#" class="text-info">@consequat</a>."</p>
-      <footer class="blockquote-footer pt-4 mt-4 border-top">Someone famous in
-        <cite title="Source Title">Source Title</cite>
+      <p class="mt-1 mb-0 font-italic">"{{item.comment}}"</p>
+      <footer class="blockquote-footer p-2 border-top">
+        <cite title="Source Title">{{item.name}}</cite>
       </footer>
     </blockquote>
-  </div>
-  <div class="bg-white client">
-    <div class="rounded text-center">
-    <img class="img p-2" src="../assets/images/clients/gsp.png" alt="" >
-  </div>
-    <blockquote class="blockquote shadow blockquote-custom bg-white p-1 rounded mt-3">
-      <div class="blockquote-custom-icon"><i class="fa fa-quote-left text-white"></i></div>
-      <p class="mb-0 font-italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. <a href="#" class="text-info">@consequat</a>."</p>
-      <footer class="blockquote-footer pt-4 mt-4 border-top">Someone famous in
-          <cite title="Source Title">Source Title</cite>
-      </footer>
-  </blockquote>
   </div>
 </div>
 </div>

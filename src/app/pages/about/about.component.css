@@ -1,0 +1,13 @@
+.photo{
+    background-image: url("../../../assets/images/service-page-1-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text{
+    color: #25386b;
+    font-weight: lighter;
+    background-color:  #0a6fce52;
+}
+.emp{
+    color: #25386b;
+}

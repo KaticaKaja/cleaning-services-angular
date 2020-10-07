@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  messageAfterSubmit:string;
   constructor() { }
 
   ngOnInit(): void {
   }
+  contact(contactForm:NgForm){
+    console.log(contactForm.value);
+      this.messageAfterSubmit="Your message was sent, we will contact you soon";
+      contactForm.reset();
+  }
 
+  closeAlert(){
+    this.messageAfterSubmit="";
+  }
 }

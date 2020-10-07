@@ -1,3 +1,4 @@
+import { EmployeesService } from './../../shared/services/http/about/employees.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  
+  constructor(private empService:EmployeesService) { }
+
+  employees:object;
 
   ngOnInit(): void {
+    this.empService.getEmployees().subscribe(data=>{
+      this.employees=data;
+      console.log(data);
+    });
   }
 
 }

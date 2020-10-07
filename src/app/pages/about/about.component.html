@@ -1,1 +1,23 @@
-<p>about works!</p>
+<header class="photo text-center py-5 mb-4">
+    <div class="container">
+      <h1 class="text p-2 rounded">Meet the Team</h1>
+    </div>
+  </header>
+  
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <!-- Team Member 1 -->
+      <div class="emp col-6 mb-4" *ngFor="let item of employees">
+        <div class="card border-0 shadow">
+          <img height="450" src="{{item.img}}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">{{item.first_name}} {{item.last_name}}</h5>
+            <div class="card-text">{{item.job_title}}</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 2 -->
+      
+    </div>
+    </div>

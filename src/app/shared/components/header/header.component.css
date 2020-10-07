@@ -5,6 +5,7 @@
 .menu li a:hover{
     color: #0A9ECE;
 }
+
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -12,5 +13,5 @@
     box-shadow: none;
 }
 .navbar-toggler:hover{
-   background-color: #0A9ECE;
+    background-color: rgba(70, 131, 180, 0.568);
 }
