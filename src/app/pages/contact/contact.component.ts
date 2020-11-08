@@ -1,6 +1,7 @@
 import { MessagesService } from './../../shared/services/http/contact/messages.service';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-contact',
@@ -10,6 +11,7 @@ import { NgForm } from '@angular/forms';
 export class ContactComponent implements OnInit {
 
   messageAfterSubmit:string;
+  private sub:Subscription;
   constructor(private http:MessagesService) { }
 
   ngOnInit(): void {
@@ -23,7 +25,7 @@ export class ContactComponent implements OnInit {
         email: contactForm.value.email,
         message: contactForm.value.message,        
       }
-      this.http.createMessage(newContact).subscribe(data=>{
+      this.sub = this.http.createMessage(newContact).subscribe(data=>{
         // console.log(data);
       });
       contactForm.reset();
@@ -31,5 +33,11 @@ export class ContactComponent implements OnInit {
 
   closeAlert(){
     this.messageAfterSubmit="";
+  }
+
+  ngOnDestroy(): void {
+    //Called once, before the instance is destroyed.
+    //Add 'implements OnDestroy' to the class.
+    this.sub.unsubscribe();
   }
 }

@@ -2,6 +2,7 @@ import { MessagesService } from './../../services/http/contact/messages.service'
 import { Component, OnInit } from '@angular/core';
 import { NavigationService } from '../../services/http/navigation/navigation.service';
 import { NgForm } from '@angular/forms';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-footer',
@@ -11,9 +12,10 @@ import { NgForm } from '@angular/forms';
 export class FooterComponent implements OnInit {
   navigation:object;
   messageAfterSubmit:string;
+  private subscription:Subscription;
   constructor(private navService:NavigationService, private msgServ: MessagesService) { }
   ngOnInit(): void {
-    this.navService.getTypesOfServices().subscribe(data=>this.navigation=data);
+    this.subscription = this.navService.getTypesOfServices().subscribe(data=>this.navigation=data);
   }
 
   sub(subForm:NgForm){
@@ -32,5 +34,11 @@ export class FooterComponent implements OnInit {
     }
     
     subForm.reset();
+  }
+
+  ngOnDestroy(): void {
+    //Called once, before the instance is destroyed.
+    //Add 'implements OnDestroy' to the class.
+    this.subscription.unsubscribe();
   }
 }
